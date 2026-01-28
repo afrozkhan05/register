@@ -5,65 +5,49 @@
     <title>Welcome Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
             height: 100vh;
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            font-family: Arial, sans-serif;
         }
 
-        .welcome-container {
-            background: #ffffff;
-            padding: 40px 30px;
+        .box {
+            background: #fff;
+            padding: 40px;
             border-radius: 12px;
             text-align: center;
-            width: 90%;
-            max-width: 400px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
-        .welcome-container h1 {
-            color: #333;
+        h1 {
             margin-bottom: 15px;
-            font-size: 2rem;
         }
 
-        .welcome-container p {
-            color: #666;
-            font-size: 1rem;
-            margin-bottom: 25px;
-        }
-
-        .welcome-container button {
-            background: #4facfe;
-            color: #fff;
-            border: none;
+        a {
+            display: inline-block;
+            margin-top: 20px;
             padding: 12px 25px;
-            font-size: 1rem;
+            background: #4facfe;
+            color: white;
+            text-decoration: none;
             border-radius: 25px;
-            cursor: pointer;
-            transition: background 0.3s ease;
+            font-size: 16px;
         }
 
-        .welcome-container button:hover {
+        a:hover {
             background: #00c6ff;
         }
     </style>
 </head>
 <body>
 
-    <div class="welcome-container">
+    <div class="box">
         <h1>Welcome!</h1>
-        <p>We’re glad to have you here. Start exploring and enjoy your journey.</p>
-        <button>Get Started</button>
+        <p>Click below to add two numbers</p>
+        <a href="addition.html">Go to Addition Page</a>
     </div>
 
 </body>
